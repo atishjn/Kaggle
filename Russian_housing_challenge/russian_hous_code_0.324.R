@@ -207,7 +207,5 @@ submission = data.table(id=test_ids, price_doc=exp(mpreds_2$price_doc)-1)
 write.table(submission, "sberbank_submission_v03.csv", sep=",", dec=".", quote=FALSE, row.names=FALSE)
 
 
-data.train1 = data.train[price_doc>1000000 & price_doc<111111112,]
-nrow(data.train)
 
 
